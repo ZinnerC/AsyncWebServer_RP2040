@@ -26,13 +26,16 @@
 #ifndef _RP2040W_ASYNC_WEBSERVER_H_
 #define _RP2040W_ASYNC_WEBSERVER_H_
 
-#if ( defined(ARDUINO_RASPBERRY_PI_PICO_W) )
+// TODO: Remove all traces of "W" and make it work with wired options
 
-#else
+// CAZ REMOVE FOR W5100s
+// #if ( defined(ARDUINO_RASPBERRY_PI_PICO_W) )
 
-  #error For RP2040W only
+// #else
 
-#endif
+//   #error For RP2040W only
+
+// #endif
 
 /////////////////////////////////////////////////
 
