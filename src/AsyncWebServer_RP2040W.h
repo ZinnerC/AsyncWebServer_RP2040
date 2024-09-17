@@ -424,6 +424,7 @@ class AsyncWebServerRequest
     void addInterestingHeader(const String& name);
 
     void redirect(const String& url);
+    void redirect(const String& url, int code);
 
     void send(AsyncWebServerResponse *response);
     void send(int code, const String& contentType = String(), const String& content = String());

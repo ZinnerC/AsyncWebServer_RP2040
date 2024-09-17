@@ -1277,6 +1277,14 @@ void AsyncWebServerRequest::redirect(const String& url)
   response->addHeader("Location", url);
   send(response);
 }
+/////////////////////////////////////////////////
+
+void AsyncWebServerRequest::redirect(const String& url,int code)
+{
+  AsyncWebServerResponse * response = beginResponse(code);
+  response->addHeader("Location", url);
+  send(response);
+}
 
 /////////////////////////////////////////////////
 
